@@ -5,6 +5,7 @@ cache:
     - node_modules/
 
 Test:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -17,6 +18,7 @@ Test:
     refs:
       - master
 Test01:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -30,6 +32,7 @@ Test01:
       - 1-task01-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Practice01:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -39,6 +42,7 @@ Practice01:
       - 1-task01-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Test02:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -52,6 +56,7 @@ Test02:
       - 2-task02-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Practice02:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -61,6 +66,7 @@ Practice02:
       - 2-task02-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Test03:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -74,6 +80,7 @@ Test03:
       - 3-task03-program-for-how-to-access-and-change-the-properties-of-an-object-in-nesting
 
 Practice03:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -83,6 +90,7 @@ Practice03:
       - 3-task03-program-for-how-to-access-and-change-the-properties-of-an-object-in-nesting
 
 Test04:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -96,6 +104,7 @@ Test04:
       - 4-task04-program-for-how-to-add-properties-inside-an-object
 
 Practice04:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -105,6 +114,7 @@ Practice04:
       - 4-task04-program-for-how-to-add-properties-inside-an-object
 
 Test05:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -118,6 +128,7 @@ Test05:
       - 5-task05-program-for-how-to-work-with-properties-of-an-object
 
 Practice05:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -127,6 +138,7 @@ Practice05:
       - 5-task05-program-for-how-to-work-with-properties-of-an-object
 
 Test06:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -140,6 +152,7 @@ Test06:
       - 6-task06-program-to-how-to-work-with-properties-of-an-object-for-invalid-data
 
 Practice06:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -149,6 +162,7 @@ Practice06:
       - 6-task06-program-to-how-to-work-with-properties-of-an-object-for-invalid-data
 
 Test07:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -162,6 +176,7 @@ Test07:
       - 7-task07-prpgram-for-how-to-work-with-the-properties-of-an-object-with-certain-features
 
 Practice07:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -171,6 +186,7 @@ Practice07:
       - 7-task07-prpgram-for-how-to-work-with-the-properties-of-an-object-with-certain-features
 
 Test08:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -184,6 +200,7 @@ Test08:
       - 8-task08-program-for-how-to-work-with-properties-of-an-object-inside-an-array
 
 Practice08:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -193,6 +210,7 @@ Practice08:
       - 8-task08-program-for-how-to-work-with-properties-of-an-object-inside-an-array
 
 Test09:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -206,6 +224,7 @@ Test09:
       - 9-task09-program-for-how-to-work-with-properties-of-an-object-to-return-data
 
 Practice09:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -215,6 +234,7 @@ Practice09:
       - 9-task09-program-for-how-to-work-with-properties-of-an-object-to-return-data
 
 Test10:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -228,6 +248,7 @@ Test10:
       - 10-task10-program-for-how-to-access-properties-of-object-and-extract-information
 
 Practice10:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -237,6 +258,7 @@ Practice10:
       - 10-task10-program-for-how-to-access-properties-of-object-and-extract-information
 
 Test11:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -250,6 +272,7 @@ Test11:
       - 11-task11-program-for-how-to-work-with-properties-of-a-recipie-object
 
 Practice11:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -259,6 +282,7 @@ Practice11:
       - 11-task11-program-for-how-to-work-with-properties-of-a-recipie-object
 
 Test12:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -272,6 +296,7 @@ Test12:
       - 12-task12-program-to-return-an-object-which-has-some-specific-string-manipulation-functions
 
 Practice12:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -281,6 +306,7 @@ Practice12:
       - 12-task12-program-to-return-an-object-which-has-some-specific-string-manipulation-functions
 
 Test13:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -294,6 +320,7 @@ Test13:
       - 13-task13-program-for-return-an-object-which-has-some-specific-functions-to-print-patterns
 
 Practice13:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -303,6 +330,7 @@ Practice13:
       - 13-task13-program-for-return-an-object-which-has-some-specific-functions-to-print-patterns
 
 Test14:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -316,6 +344,7 @@ Test14:
       - 14-task14-program-to-traverse-directory-tree-object
 
 Practice14:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -325,6 +354,7 @@ Practice14:
       - 14-task14-program-to-traverse-directory-tree-object
 
 Test15:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -338,6 +368,7 @@ Test15:
       - 15-task15-program-to-check-whether-the-argument-passed-is-an-object-or-not
 
 Practice15:
+  timeout: 4m 30s
   tags:
     - practice
   script:
@@ -347,6 +378,7 @@ Practice15:
       - 15-task15-program-to-check-whether-the-argument-passed-is-an-object-or-not
 
 Test16:
+  timeout: 4m 30s
   tags:
     - object
   script:
@@ -360,6 +392,7 @@ Test16:
       - 16-task16-program-to-check-how-many-combinations-are-possible-for-a-person-to-reach-the-topmost
 
 Practice16:
+  timeout: 4m 30s
   tags:
     - practice
   script:
