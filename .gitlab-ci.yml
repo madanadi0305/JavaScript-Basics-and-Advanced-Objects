@@ -1,313 +1,369 @@
 image: node:latest
 
 cache:
-   paths:
-       - node_modules/
+  paths:
+    - node_modules/
 
 Test:
-    script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test
-    only:
-        refs:
-            - master
-Test01:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test01
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test
+  only:
+    refs:
+      - master
+Test01:
+  tags:
+    - object
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test01
   only:
     refs:
       - 1-task01-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Practice01:
+  tags:
+    - practice
   script:
-      - node practice01.js
+    - node practice01.js
   only:
     refs:
       - 1-task01-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Test02:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test02
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test02
   only:
     refs:
       - 2-task02-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Practice02:
+  tags:
+    - practice
   script:
-      - node practice02.js
+    - node practice02.js
   only:
     refs:
       - 2-task02-program-for-how-to-access-and-change-the-properties-of-an-object
 
 Test03:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test03
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test03
   only:
     refs:
       - 3-task03-program-for-how-to-access-and-change-the-properties-of-an-object-in-nesting
 
 Practice03:
+  tags:
+    - practice
   script:
-      - node practice03.js
+    - node practice03.js
   only:
     refs:
       - 3-task03-program-for-how-to-access-and-change-the-properties-of-an-object-in-nesting
 
 Test04:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test04
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test04
   only:
     refs:
       - 4-task04-program-for-how-to-add-properties-inside-an-object
 
 Practice04:
+  tags:
+    - practice
   script:
-      - node practice04.js
+    - node practice04.js
   only:
     refs:
       - 4-task04-program-for-how-to-add-properties-inside-an-object
 
 Test05:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test05
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test05
   only:
     refs:
       - 5-task05-program-for-how-to-work-with-properties-of-an-object
 
 Practice05:
+  tags:
+    - practice
   script:
-      - node practice05.js
+    - node practice05.js
   only:
     refs:
       - 5-task05-program-for-how-to-work-with-properties-of-an-object
 
-      
 Test06:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test06
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test06
   only:
     refs:
       - 6-task06-program-to-how-to-work-with-properties-of-an-object-for-invalid-data
 
 Practice06:
+  tags:
+    - practice
   script:
-      - node practice06.js
+    - node practice06.js
   only:
     refs:
       - 6-task06-program-to-how-to-work-with-properties-of-an-object-for-invalid-data
 
-      
 Test07:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test07
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test07
   only:
     refs:
       - 7-task07-prpgram-for-how-to-work-with-the-properties-of-an-object-with-certain-features
 
 Practice07:
+  tags:
+    - practice
   script:
-      - node practice07.js
+    - node practice07.js
   only:
     refs:
       - 7-task07-prpgram-for-how-to-work-with-the-properties-of-an-object-with-certain-features
 
-      
 Test08:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test08
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test08
   only:
     refs:
       - 8-task08-program-for-how-to-work-with-properties-of-an-object-inside-an-array
 
 Practice08:
+  tags:
+    - practice
   script:
-      - node practice08.js
+    - node practice08.js
   only:
     refs:
       - 8-task08-program-for-how-to-work-with-properties-of-an-object-inside-an-array
 
-      
 Test09:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test09
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test09
   only:
     refs:
       - 9-task09-program-for-how-to-work-with-properties-of-an-object-to-return-data
 
 Practice09:
+  tags:
+    - practice
   script:
-      - node practice09.js
+    - node practice09.js
   only:
     refs:
       - 9-task09-program-for-how-to-work-with-properties-of-an-object-to-return-data
 
 Test10:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test10
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test10
   only:
     refs:
       - 10-task10-program-for-how-to-access-properties-of-object-and-extract-information
 
 Practice10:
+  tags:
+    - practice
   script:
-      - node practice10.js
+    - node practice10.js
   only:
     refs:
       - 10-task10-program-for-how-to-access-properties-of-object-and-extract-information
 
-      
 Test11:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test11
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test11
   only:
     refs:
       - 11-task11-program-for-how-to-work-with-properties-of-a-recipie-object
 
 Practice11:
+  tags:
+    - practice
   script:
-      - node practice11.js
+    - node practice11.js
   only:
     refs:
       - 11-task11-program-for-how-to-work-with-properties-of-a-recipie-object
 
-      
 Test12:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test12
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test12
   only:
     refs:
       - 12-task12-program-to-return-an-object-which-has-some-specific-string-manipulation-functions
 
 Practice12:
+  tags:
+    - practice
   script:
-      - node practice12.js
+    - node practice12.js
   only:
     refs:
       - 12-task12-program-to-return-an-object-which-has-some-specific-string-manipulation-functions
 
-      
 Test13:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test13
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test13
   only:
     refs:
       - 13-task13-program-for-return-an-object-which-has-some-specific-functions-to-print-patterns
 
 Practice13:
+  tags:
+    - practice
   script:
-      - node practice13.js
+    - node practice13.js
   only:
     refs:
       - 13-task13-program-for-return-an-object-which-has-some-specific-functions-to-print-patterns
 
-      
 Test14:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test14
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test14
   only:
     refs:
       - 14-task14-program-to-traverse-directory-tree-object
 
 Practice14:
+  tags:
+    - practice
   script:
-      - node practice14.js
+    - node practice14.js
   only:
     refs:
       - 14-task14-program-to-traverse-directory-tree-object
 
-
 Test15:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test15
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test15
   only:
     refs:
       - 15-task15-program-to-check-whether-the-argument-passed-is-an-object-or-not
 
 Practice15:
+  tags:
+    - practice
   script:
-      - node practice15.js
+    - node practice15.js
   only:
     refs:
       - 15-task15-program-to-check-whether-the-argument-passed-is-an-object-or-not
 
-      
 Test16:
+  tags:
+    - object
   script:
-        - git config --global user.email "jindal.swapnil2@gmail.com"
-        - git config --global user.name "Swapnil"
-        - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
-        - npm install
-        - npm run test16
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/object-specs.git master
+    - npm install
+    - npm run test16
   only:
     refs:
       - 16-task16-program-to-check-how-many-combinations-are-possible-for-a-person-to-reach-the-topmost
 
 Practice16:
+  tags:
+    - practice
   script:
-      - node practice16.js
+    - node practice16.js
   only:
     refs:
       - 16-task16-program-to-check-how-many-combinations-are-possible-for-a-person-to-reach-the-topmost
