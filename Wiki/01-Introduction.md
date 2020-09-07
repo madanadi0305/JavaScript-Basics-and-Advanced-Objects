@@ -55,8 +55,8 @@ We can create an example object, contained in the variable gimli, to describe a 
 ```js
 // Creating object using literal
 var car={
-    type:["BMW","AUDI","MERCEDES","TESLA"];
-    model:["X6","R8","GLA","ROADSTER"];
+    type:["BMW","AUDI","MERCEDES","TESLA"],
+    model:["X6","R8","GLA","ROADSTER"],
     color:"Royal Blue";
 }
 
