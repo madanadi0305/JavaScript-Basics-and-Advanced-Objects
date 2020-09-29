@@ -4,7 +4,7 @@ var nestedData = {
     snacks: [],
     numberData: {
         primeNumbers: [],
-        fibonnaci: [0,1,1,2,3,5,8,13,21,44,65]
+        fibonnaci: []
     },
     
   }
@@ -21,5 +21,5 @@ fibonacci_array.push(fibonacciArray[i]);
 return fibonacci_array;
 }
 
-//task02(nestedData);
+
 module.exports=task02;
