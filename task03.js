@@ -22,7 +22,7 @@ var value=snackArray[key];
 if(value==="chocolate")
 {
     chocolate=value;
-    break;
+  //  break;
 }
 });
 return chocolate;
