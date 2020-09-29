@@ -15,16 +15,16 @@ var nestedData = {
 
 
 function task03(nestedData){
-var chocolate;    
-var snackArray=nestedData.innerData.snacks;
-Object.keys(snackArray).forEach(key=>{
-var value=snackArray[key];
-if(value==="chocolate")
-{
-    chocolate=value;
-  //  break;
+var snackItems=nestedData.innerData.snacks;
+var returnVal;
+var snackValues=Object.values(snackItems);
+for(value in snackValues){
+if(value==="chocolate"){
+returnVal=value;
+break;
 }
-});
-return chocolate;
+
+}
+return returnVal;
 }
 module.exports=task03;
