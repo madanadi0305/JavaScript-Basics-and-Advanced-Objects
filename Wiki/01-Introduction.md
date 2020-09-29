@@ -1,6 +1,8 @@
 # Introduction to Objects
 
-Javascript has variables that can store data values like numbers and strings. Objects are also variables but they can contain multiple data values. The data values are written as _key: value_ pairs (key and value separated by a **colon**). The key: value pair is called _properties_. Different properties in an object are separated by comma (,). In the given example, we have an object with 2 properties (name:"apple") and (color:"red").
+Javascript has variables that can store data values like numbers and strings. 
+Objects are also variables but they can contain multiple data values. 
+The data values are written as _key: value_ pairs (key and value separated by a **colon**). The key: value pair is called _properties_. Different properties in an object are separated by comma (,). In the given example, we have an object with 2 properties (name:"apple") and (color:"red").
 
 ```js
 // Create an Object
@@ -28,7 +30,11 @@ console.log(fruits);
 
 ## Creating an Object
 
-With JavaScript, you can define and create your own objects. The first way to do it is by using a list of key: value pairs (like age: 50) inside curly braces { } (called _object literal_). Using an object literal, you both define and create an object in one statement. This is the easiest way to create a JavaScript Object and us advise that you use it frequently.
+With JavaScript, you can define and create your own objects. 
+The first way to do it is by using a list of key: value pairs (like age: 50) inside curly braces { } 
+(called _object literal_). 
+Using an object literal, you both define and create an object in one statement. 
+This is the easiest way to create a JavaScript Object and us advise that you use it frequently.
 
 - The **object literal**, which uses curly brackets:
 
@@ -62,9 +68,13 @@ var car={
 
 ```
 
-Let's create a new object `gimli`, which has three properties. Each property consists of a **name: value** pair, also known as **key:value** pair. `weapon` is one of the property names, which is linked to the property value "axe", a string. It has one method, with a method name of greet and the method value consisting of the contents of the function.
+Let's create a new object `gimli`, which has three properties. Each property consists of a **name: value** pair, 
+also known as **key:value** pair. 
+`weapon` is one of the property names, which is linked to the property value "axe", a string. 
+It has one method, with a method name of greet and the method value consisting of the contents of the function.
 
-Within greet, you may notice the this keyword. When using this inside of an object, it refers to the current object, in this case gimli.
+Within greet, you may notice the this keyword. When using this inside of an object, it refers to the current object,
+ in this case gimli.
 
 **Sending gimli to the console will print out the entire object.**
 
@@ -82,7 +92,8 @@ Next, we will review a JavaScript object's properties and methods.
 
 Objects can have **properties** and **methods**.
 
-Property is the association between a name (key) and value within an object, and it can contain any datatype. Property generally refers to the characteristic of an object.
+Property is the association between a name (key) and value within an object, and it can contain any datatype. 
+Property generally refers to the characteristic of an object.
 
 A method is a function that is the value of an object property, and therefore a task that an object can perform.
 

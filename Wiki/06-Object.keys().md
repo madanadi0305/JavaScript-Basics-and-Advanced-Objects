@@ -1,6 +1,7 @@
 # Object.keys()
 
-Lets say you have an object and you want to get all the keys of the object in an array. You can do that by using keys() method with the following syntax ObjectName.keys().
+Lets say you have an object and you want to get all the keys of the object in an array. 
+You can do that by using keys() method with the following syntax ObjectName.keys().
 
 ```js
 // Initialize an object
@@ -25,7 +26,9 @@ Keys are ["boss", "secretary", "sales", "accountant"]
 ```
 
 <DEMO>
-As you know that Array.forEach() method is used to loop through the elements of an array. Similarly, Object.keys can be used with forEach() method to loop through the keys and values of an object as shown below:
+As you know that Array.forEach() method is used to loop through the elements of an array. 
+Similarly, Object.keys can be used with forEach() method to loop through the keys and values of an object as 
+shown below:
 
 ```js
 // Iterate through the keys

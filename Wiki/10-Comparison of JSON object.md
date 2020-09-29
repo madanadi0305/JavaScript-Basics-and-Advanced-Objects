@@ -17,8 +17,15 @@ var user = {
 };
 ```
 
-This will look very familiar to you as a JSON object, but there are no quotes around any of the keys (first_name, last_name, online, or full_name), and there is a function value in the last line.
+This will look very familiar to you as a JSON object, 
+but there are no quotes around any of the keys (first_name, last_name, online, or full_name), 
+and there is a function value in the last line.
 
-If we want to access the data in the JavaScript object above, we could use dot notation to call user.first_name; and get a string, but if we want to access the full name, we would need to do so by calling user.full_name(); because it is a function.
+If we want to access the data in the JavaScript object above, 
+we could use dot notation to call user.first_name;
 
-JavaScript objects can only exist within the JavaScript language, so when you're working with data that needs to be accessed by various languages, it is best to opt for JSON.
+ and get a string, but if we want to access the full name,
+  we would need to do so by calling user.full_name(); because it is a function.
+
+JavaScript objects can only exist within the JavaScript language, 
+so when you're working with data that needs to be accessed by various languages, it is best to opt for JSON.

@@ -27,7 +27,8 @@ var sammy = {
 };
 ```
 
-Additionally, you may see JSON as a string rather than an object within the context of a JavaScript program file or script. In this case, you may also see it all on one line:
+Additionally, you may see JSON as a string rather than an object within the context of a JavaScript program file or script.
+ In this case, you may also see it all on one line:
 
 ```js
 var sammy =

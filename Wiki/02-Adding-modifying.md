@@ -2,7 +2,8 @@
 
 To add a new property to an object, you can assign a new value to a property with the (=) operator.
 
-For example, we can add a value 'male' to the person object as the new gender property. Both the dot and bracket notation can be used to add a new property in an object.
+For example, we can add a value 'male' to the person object as the new gender property. 
+Both the dot and bracket notation can be used to add a new property in an object.
 
 **Add gender property to person**
 

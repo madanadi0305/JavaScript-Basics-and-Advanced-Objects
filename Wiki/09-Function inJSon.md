@@ -1,6 +1,8 @@
 # Functions for Working with JSON
 
-This section will look at two methods for working with JSON. You will learn how to convert JSON from object to string and string to object. This is very useful for transferring and storing data.
+This section will look at two methods for working with JSON. 
+You will learn how to convert JSON from object to string and string to object.
+ This is very useful for transferring and storing data.
 
 
 ### JSON.stringify()

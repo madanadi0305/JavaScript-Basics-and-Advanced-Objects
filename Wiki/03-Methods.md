@@ -2,7 +2,8 @@
 
 JavaScript methods are actions that can be performed on objects.
 
-A JavaScript **method** is a property containing a function in place of value. Methods are functions stored as key:value pair. You can access an object method with the following
+A JavaScript **method** is a property containing a function in place of value.
+ Methods are functions stored as key:value pair. You can access an object method with the following
 
 **Syntax**
 
@@ -10,7 +11,8 @@ A JavaScript **method** is a property containing a function in place of value. M
 objectName.methodName();
 ```
 
-In the below example, We have an object with name person and method fullName (), we can access the method as given below:
+In the below example, We have an object with name person and method fullName (),
+ we can access the method as given below:
 
 **Method**
 
