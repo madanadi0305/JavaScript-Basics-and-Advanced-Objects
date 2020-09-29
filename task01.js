@@ -13,7 +13,7 @@ var obj = {
 
 function task01(obj){
 var prime_array=[];
-var primeNumberValues=obj.primeNumbers;
+var primeNumberValues=obj.types.numberData.primeNumbers;
 primeNumberValues.forEach(value=>{
 prime_array.push(value);
 
