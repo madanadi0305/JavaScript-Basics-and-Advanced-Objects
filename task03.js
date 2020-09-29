@@ -17,14 +17,23 @@ var nestedData = {
 function task03(nestedData){
 var snackItems=nestedData.innerData.snacks;
 var returnVal;
+var is_Present;
 var snackValues=Object.values(snackItems);
 for(value in snackValues){
+ is_Present=0;   
 if(value==="chocolate"){
 returnVal=value;
+is_Present=1;
 break;
 }
 
 }
-return returnVal;
+if(is_Present===1){
+    return returnVal;
+}
+else{
+    return -1;
+}
+
 }
 module.exports=task03;
