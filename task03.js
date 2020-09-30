@@ -46,6 +46,6 @@ else{
 return -1;
 }
 }
-
-var a=task03(nestedData);
-console.log(a);
+module.exports=task03;
+//var a=task03(nestedData);
+//console.log(a);
