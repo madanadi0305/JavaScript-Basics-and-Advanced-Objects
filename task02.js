@@ -12,17 +12,14 @@ var nestedData = {
 
 function task02(nestedData){
 var fib_array=[];
-//var position;
-var fibonnacci_array=nestedData.innerData.numberData.fibonnaci;
-/*if(fibonnacci_array=[]){
-return -1;
 
-}*/
+var fibonnacci_array=nestedData.innerData.numberData.fibonnaci;
+
 for(var i=0;i<fibonnacci_array.length;i++){
 if(i%2===0){
-//var k=fibonnacci_array[i];    
+    
 fib_array.push(fibonnacci_array[i]);
-//position=i;
+
 }
 
 }
