@@ -29,7 +29,7 @@ newObj.population=population;
 var countryObj=nestedObject.data.continents.europe.countries;
 countryObj[countryName]=newObj;
 var keys=Object.keys(countryObj);
-var keyname=keys[key.length-1];
+var keyname=keys[keys.length-1];
 return keyname;
 }
 module.exports=task04;
