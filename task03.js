@@ -17,8 +17,8 @@ var nestedData = {
 
 function task03(nestedData){
 var is_Present,returnVal;
-var snacks=nestedData.snacks;
-var snackKeys=Object.keys(nestedData.snacks);
+var snacks=nestedData.innerData.snacks;
+var snackKeys=Object.keys(nestedData.innerData.snacks);
 //console.log(snackKeys);
 //console.log(nestedData.snacks[snackKeys[1]]);
 for(keys in snackKeys){
