@@ -24,6 +24,9 @@ var nestedObject = {
 
 function task04(nestedObject,countryName,capital,population){
 var newObj={};
+if(capital===null||population===null||countryName===null){
+    return -1;
+}
 newObj.capital=capital;
 newObj.population=population;
 var countryObj=nestedObject.data.continents.europe.countries;
