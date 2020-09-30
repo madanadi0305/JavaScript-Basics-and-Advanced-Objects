@@ -33,6 +33,7 @@ var countryObj=nestedObject.data.continents.europe.countries;
 countryObj[countryName]=newObj;
 var keys=Object.keys(countryObj);
 var keyname=keys[keys.length-1];
-return keyname;
+//return keyname;
+return Object.values(countryObj);
 }
 module.exports=task04;
