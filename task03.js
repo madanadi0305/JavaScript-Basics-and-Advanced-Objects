@@ -14,26 +14,38 @@ var nestedData = {
 };
 
 
+
 function task03(nestedData){
-var snackItems=nestedData.innerData.snacks;
-var returnVal;
-var is_Present;
-var snackValues=Object.values(snackItems);
-for(value in snackValues){
- is_Present=0;   
-if(value==="chocolate"){
-returnVal=value;
-is_Present=1;
-break;
+var is_Present,returnVal;
+var snacks=nestedData.snacks;
+var snackKeys=Object.keys(nestedData.snacks);
+//console.log(snackKeys);
+//console.log(nestedData.snacks[snackKeys[1]]);
+for(keys in snackKeys){
+var snackValue=snacks[snackKeys[keys]];
+ console.log(snackValue); 
+ var snack_snack_keys=Object.keys(snackValue);
+ for(key1 in snack_snack_keys){
+ var snackSnackValue=snackValue[snack_snack_keys[key1]];
+  //console.log(snackSnackValue); 
+   if(snackSnackValue==='chocolate'){
+   is_Present=1;
+   returnVal=snackSnackValue;  
+   break;  
+   }
+ }
+  
 }
 
-}
 if(is_Present===1){
-    return returnVal;
-}
-else{
-    return -1;
-}
+return returnVal;
 
 }
-module.exports=task03;
+
+else{
+return -1;
+}
+}
+
+var a=task03(nestedData);
+console.log(a);
