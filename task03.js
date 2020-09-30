@@ -12,42 +12,13 @@ var nestedData = {
     }
   }
 };
-
-
-
 function task03(nestedData){
-var is_Present,returnVal;
 var snacks=nestedData.innerData.snacks;
-var snackKeys=Object.keys(nestedData.innerData.snacks);
-//console.log(snackKeys);
-//console.log(nestedData.snacks[snackKeys[1]]);
-for(keys in snackKeys){
-var snackValue=snacks[snackKeys[keys]];
- console.log(snackValue); 
- var snack_snack_keys=Object.keys(snackValue);
- for(key1 in snack_snack_keys){
- var snackSnackValue=snackValue[snack_snack_keys[key1]];
-  //console.log(snackSnackValue); 
-   if(snackSnackValue==='chocolate'){
-   //is_Present=1;
-   returnVal=snackSnackValue;  
-   return returnVal;
-  // break;  
-   }
- }
-  
-}
-return -1;
+var snackKeys=Object.keys(snacks);
+var snackItem=snacks[snackKeys[1]];
+var snackItemKeys=Object.keys(snackItem);
 
-/*if(is_Present===1){
-return returnVal;
-
-}
-
-else{
-return -1;
-}*/
+var retVal=snackItem[snackItemKeys[0]];
+return retVal;
 }
 module.exports=task03;
-//var a=task03(nestedData);
-//console.log(a);
