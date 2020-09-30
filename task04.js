@@ -28,7 +28,7 @@ if(capital===null||population===null||countryName===null){
     return -1;
 }
 newObj.capital=capital;
-newObj.population=population;
+newObj.population=parseInt(population);
 var countryObj=nestedObject.data.continents.europe.countries;
 countryObj[countryName]=newObj;
 var keys=Object.keys(countryObj);
