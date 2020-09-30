@@ -29,22 +29,24 @@ var snackValue=snacks[snackKeys[keys]];
  var snackSnackValue=snackValue[snack_snack_keys[key1]];
   //console.log(snackSnackValue); 
    if(snackSnackValue==='chocolate'){
-   is_Present=1;
+   //is_Present=1;
    returnVal=snackSnackValue;  
-   break;  
+   return returnVal;
+  // break;  
    }
  }
   
 }
+return -1;
 
-if(is_Present===1){
+/*if(is_Present===1){
 return returnVal;
 
 }
 
 else{
 return -1;
-}
+}*/
 }
 module.exports=task03;
 //var a=task03(nestedData);
