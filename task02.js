@@ -21,7 +21,7 @@ for(var i=0;i<fibonnacci_array.length;i++){
 if(i%2===0){
 //var k=fibonnacci_array[i];    
 fib_array.push(fibonnacci_array[i]);
-return 
+
 }
 
 }
