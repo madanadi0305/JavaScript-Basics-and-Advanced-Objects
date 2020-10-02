@@ -33,8 +33,8 @@ prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0)})
 
 console.log(prop1);  
 console.log(prop2);  
-newObj.prop1=[prop1];
-newObj.prop2=[prop2];
+newObj.prop1=prop1;
+newObj.prop2=prop2;
 
 return newObj;  
 }
