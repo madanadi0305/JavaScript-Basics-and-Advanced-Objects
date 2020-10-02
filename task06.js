@@ -34,8 +34,8 @@ prop1.splice(i,1);
 prop2=prop.filter(function(x){return(x===null||isNaN(x)||value==="undefined"||value===undefined||value===0)});  
 
 
-console.log(prop1);  
-console.log(prop2);  
+//console.log(prop1);  
+//console.log(prop2);  
 newObj.prop1=prop1;
 newObj.prop2=prop2;
 
