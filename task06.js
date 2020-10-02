@@ -17,7 +17,7 @@ function task06(arr){
 var newObj={};
 var prop1;
 var prop2;  
-//var prop2=[];
+
 var prop=[];  
 for(var i=0;i<arr.length;i++){
 var value=arr[i]["id"];
@@ -27,12 +27,8 @@ prop.push(value);
   
 }
 
-prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(x!==NaN)&&(x!=="undefined")||(x!=='undefined'))});  
-for(var i=0;i<prop1.length;i++){
-if(isNaN(prop1[i])){
-prop1.splice(i,1);
-}
-}
+prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))&&(x!=="undefined")||(x!=='undefined'))});  
+
 prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0)});  
 
 console.log(prop1);  
