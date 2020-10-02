@@ -31,8 +31,7 @@ prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!is
 
 prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0||x==="undefined")});  
 
-console.log(prop1);  
-console.log(prop2);  
+  
 newObj.prop1=prop1;
 newObj.prop2=prop2;
 
