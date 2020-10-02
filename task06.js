@@ -25,7 +25,7 @@ prop.push(value);
   
 }
 
-prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(x!==NaN)&&(x!=="undefined"))});  
+prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(x!==NaN)&&(x!=="undefined")&&(x!=='undefined'))});  
 for(var i=0;i<prop1.length;i++){
 if(isNaN(prop1[i])){
 prop1.splice(i,1);
