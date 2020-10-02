@@ -34,7 +34,7 @@ prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0||x
 //console.log(prop2);
  
 newObj.prop1=prop1;
-newObj.prop2=prop2;
+newObj.prop2=prop2.length;
 console.log(newObj); 
 return newObj;  
 }
