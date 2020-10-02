@@ -31,7 +31,7 @@ if(isNaN(prop1[i])){
 prop1.splice(i,1);
 }
 }
-prop2=prop.filter(function(x){return(x===null||isNaN(x)||value==="undefined"||value===undefined||value===0)});  
+prop2=prop.filter(function(x){return(x===null||isNaN(x)||x==="undefined"||x===undefined||x===0)});  
 
 
 //console.log(prop1);  
