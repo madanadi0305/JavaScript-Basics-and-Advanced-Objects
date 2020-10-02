@@ -27,9 +27,9 @@ prop.push(value);
   
 }
 
-prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))&&(x!=="undefined")||(x!=='undefined'))});  
+prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))&&(x!=="undefined"))});  
 
-prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0)});  
+prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0||x==="undefined")});  
 
 console.log(prop1);  
 console.log(prop2);  
