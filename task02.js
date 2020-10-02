@@ -8,7 +8,7 @@ var nestedData = {
     },
     
   }
-}
+};
 
 function task02(nestedData){
 var fib_array=[];
