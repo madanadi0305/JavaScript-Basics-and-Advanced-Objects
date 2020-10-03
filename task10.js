@@ -32,5 +32,5 @@ for(var i=0;i<obj.length;i++){
 return carName;
 }
 module.exports=task10;
-console.log(a);
+//console.log(a);
 //module.exports=task10;
