@@ -17,7 +17,7 @@ var elem=servings_array[i];
 }
 
 }
-console.log(repear_array);
+console.log(repeat_array);
   return repeat_array;
 }
 module.exports=task11;
