@@ -16,12 +16,12 @@ var personnel = [
 ];
 
 function task07(personnel){
-var total_score=[];    
+var total_score=0;    
 for(var i=0;i<personnel.length;i++){
 var checkForceUser=personnel[i].isForceUser;
 if(checkForceUser===true){
 var totalScore=personnel[i].pilotingScore+personnel[i].shootingScore;
-total_score.push(totalScore);
+total_score+=totalScore;
 }
 
 }
