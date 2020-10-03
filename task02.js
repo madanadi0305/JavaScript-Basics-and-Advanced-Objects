@@ -19,14 +19,16 @@ return -1;
 
 }*/
 for(var i=0;i<fibonnacci_array.length;i++){
-if(i%2===0 && ((fibonnacci_array[i]!==undefined)||!(isNaN(fibonnacci_array[i]))||(fibonnacci_array[i]!==null)||(fibonnacci_array[i]!==false))){
-    
-fib_array.push(fibonnacci_array[i]);
+if(i%2===0){
+ var value=fibonnacci_array[i];
+if(value===false||value===undefined||value==="undefined"||value===""||value===null||value===-1||isNaN(value)){
+  fib_array.push(-1);
+}  
+else{  
+fib_array.push(value);
+}
+}
 
-}
-else{
-    fib_array.push(-1);
-}
 
 }
 return fib_array;
