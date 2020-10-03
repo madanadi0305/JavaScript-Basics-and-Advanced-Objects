@@ -19,7 +19,7 @@ return -1;
 
 }*/
 for(var i=0;i<fibonnacci_array.length;i++){
-if(i%2===0 && ((fibonnacci_array[i]!==undefined)||!(isNaN(fibonnacci_array[i]))||(fibonnacci_array[i]!==null)||(fibonnacci_array[i]===0))){
+if(i%2===0 && ((fibonnacci_array[i]!==undefined)||!(isNaN(fibonnacci_array[i]))||(fibonnacci_array[i]!==null)||(fibonnacci_array[i]!==false))){
     
 fib_array.push(fibonnacci_array[i]);
 
