@@ -18,13 +18,13 @@ var library = [
      for(var i=0;i<library.length;i++){
      var readingStatus=library[i].readingStatus;
      if(readingStatus===true){
-     true_array.push(library[i].title);
-     true_array.push(library[i].author);
+  
+     true_array.push(library[i]);
 
      }
      else{
-         false_array.push(library[i].title);
-         false_array.push(library[i].author);
+         false_array.push(library[i]);
+         
      }
      }
      resultObj.prop1=true_array;
