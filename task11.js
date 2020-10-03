@@ -21,3 +21,5 @@ console.log(repeat_array);
   return repeat_array;
 }
 module.exports=task11;
+var a=task11(recipe);
+console.log(a);
