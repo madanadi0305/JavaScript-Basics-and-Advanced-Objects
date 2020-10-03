@@ -17,19 +17,20 @@ function task10(obj){
 for(var i=0;i<obj.length;i++){
   if(i==2){
       var title_list=obj[i].title;
-      for(var j=0;j<title_list.length;i++){
-          if(j===1){
-             var titleElement=title_list[j];
-             for(var k=0;k<titleElement.length;k++){
-                var title_id=titleElement[k].id;
-                if(titleElement[titleElement[k].id]===01){
-                     carName=titleElement[k].name;
-                }
-             }
-          }
-      }
-  }  
+      console.log(title_list);
+    var titleElement=title_list[1];
+    for(var i=0;i<titleElement.length;i++){
+    var elem=titleElement[i];
+    if(elem["id"]===1){
+    carName=elem["name"];
+    }
+    
+    
+    }
+  }   
 }
 return carName;
 }
 module.exports=task10;
+console.log(a);
+//module.exports=task10;
