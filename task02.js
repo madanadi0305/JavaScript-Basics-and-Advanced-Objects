@@ -19,7 +19,7 @@ return -1;
 
 }*/
 for(var i=0;i<fibonnacci_array.length;i++){
-if(i%2===0 && (fibonnacci_array[i]!==null)||!(isNaN(fibonnacci_array[i]))){
+if(i%2===0){
     
 fib_array.push(fibonnacci_array[i]);
 
