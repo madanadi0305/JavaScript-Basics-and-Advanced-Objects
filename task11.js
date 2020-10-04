@@ -6,7 +6,8 @@ var recipe = {
 
 function task11(recipe){
 var list=recipe.servings;
-console.log(list);
+
+console.log("Original List:",list);
 var repeat=[];
 var count,isOk;  
 for(var i=0;i<list.length;i++){
@@ -22,7 +23,7 @@ count=count+1;
 }
 }  
 }  
-console.log(repeat);
+console.log("Returned List:",repeat);
 
 return repeat;
   
