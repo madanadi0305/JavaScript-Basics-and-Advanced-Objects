@@ -33,6 +33,7 @@ fib_array.push(value);
 
 }
 console.log(fib_array);
-return fib_array;
+fibonnacci_array=fib_array;
+return fibonnacci_array;
 }
 module.exports=task02;
