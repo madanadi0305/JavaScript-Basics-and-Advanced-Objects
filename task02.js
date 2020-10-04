@@ -18,6 +18,7 @@ var fibonnacci_array=nestedData.innerData.numberData.fibonnaci;
 return -1;
 
 }*/
+console.log(fibonnacci_array);
 for(var i=0;i<fibonnacci_array.length;i++){
 if(i%2===0){
  var value=fibonnacci_array[i];
@@ -31,6 +32,7 @@ fib_array.push(value);
 
 
 }
+console.log(fib_array);
 return fib_array;
 }
 module.exports=task02;
