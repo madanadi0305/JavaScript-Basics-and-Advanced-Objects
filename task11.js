@@ -1,11 +1,12 @@
 var recipe = {
   title: "mole",
-  servings: [2, 5, 7, 9, 7, 9, 6, 5, 4, 4],
+  servings: [],
   ingredients: ["cumin", "cinnamon", "cocoa"]
 };
 
 function task11(recipe){
 var list=recipe.servings;
+console.log(list);
 var repeat=[];
 var count,isOk;  
 for(var i=0;i<list.length;i++){
@@ -16,16 +17,16 @@ if(val===list[j]){
 if(count>=2){break;}  
 repeat.push(list[j]);
 count=count+1;
-isOk=1;  
+//isOk=1;  
 //console.log(count);  
 }
 }  
 }  
-//console.log(repeat);
-if(isOk===1)
-{return repeat;}
-else{return -1;}  
+console.log(repeat);
+
+return repeat;
+  
 }
 
 module.exports=task11;
-;
+
