@@ -22,7 +22,7 @@ count=count+1;
 
 
   
- if(count>=2){
+ if(count>2){
    repeat.push(k);
    break;
  }
