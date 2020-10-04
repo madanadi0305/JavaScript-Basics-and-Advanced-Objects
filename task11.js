@@ -1,6 +1,6 @@
 var recipe = {
   title: "mole",
-  servings: [2,1,1,1,2,3,10,10,10,9,2,3,3,5,7,9,7,9,6,5,4,4],
+  servings: [],
   //servings:[2, 5, 7, 9, 7, 9, 6, 5, 4, 4],
   ingredients: ["cumin", "cinnamon", "cocoa"]
 };
