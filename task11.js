@@ -38,5 +38,6 @@ if(list[j]===val){
 console.log("New List:",repeat);  
 return repeat;  
 }
+module.exports=task11;
 //var a=task11(recipe);
 //console.log(a);
