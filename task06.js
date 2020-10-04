@@ -7,10 +7,7 @@ var arr = [
   {},
   { id: null },
   { id: NaN },
-  {id:'undefined'},
-
-  {id:45},
-  {id:122}
+  { id: "undefined" }
 ];
 
 function task06(arr){
@@ -28,15 +25,17 @@ prop.push(value);
 }
 
 prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))&&(x!==""))});  
-
+var prop11=Object.assign({},prop1);
+console.log(prop11);  
 prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0||x==="undefined")});  
 //console.log(prop1);
 //console.log(prop2);
  
-newObj.prop1=prop1;
+newObj.prop1=prop11;
 newObj.prop2=prop2.length;
 console.log(newObj); 
 return newObj;  
 }
-
 module.exports=task06;
+//var a=task06(arr);
+//console.log(a);
