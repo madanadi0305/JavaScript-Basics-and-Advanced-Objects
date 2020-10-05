@@ -20,7 +20,7 @@ return -1;
 }*/ 
 console.log(fibonnacci_array);
 for(var i=0;i<fibonnacci_array.length;i++){
-if(i%2===0){
+if((fibonnacci_array[i]%2)===0){
  var value=fibonnacci_array[i];
 /*if(value===false||value===undefined||value==="undefined"||value===""||value===null||value===-1||isNaN(value)){
   fib_array.push(-1);
@@ -33,7 +33,7 @@ fib_array.push(value);
 
 }
 console.log(fib_array);
-fibonnacci_array=fib_array;
+//fibonnacci_array=fib_array;
 return fib_array;
 }
 module.exports=task02;
