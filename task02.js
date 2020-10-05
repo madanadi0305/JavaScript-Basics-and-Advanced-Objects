@@ -17,7 +17,7 @@ var fibonnacci_array=nestedData.innerData.numberData.fibonnaci;
 /*if(fibonnacci_array===[]||fibonnacci_array===null){
 return -1;
 
-}*/
+}*/ 
 console.log(fibonnacci_array);
 for(var i=0;i<fibonnacci_array.length;i++){
 if(i%2===0){
