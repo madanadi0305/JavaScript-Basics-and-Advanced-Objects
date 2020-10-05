@@ -22,12 +22,12 @@ console.log(fibonnacci_array);
 for(var i=0;i<fibonnacci_array.length;i++){
 if(i%2===0){
  var value=fibonnacci_array[i];
-if(value===false||value===undefined||value==="undefined"||value===""||value===null||value===-1||isNaN(value)){
+/*if(value===false||value===undefined||value==="undefined"||value===""||value===null||value===-1||isNaN(value)){
   fib_array.push(-1);
-}  
-else{  
+}*/  
+//else{  
 fib_array.push(value);
-}
+//}
 }
 
 
