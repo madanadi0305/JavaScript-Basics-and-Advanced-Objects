@@ -1,5 +1,5 @@
 function task15(args){
-if((typeof args==="object") && (args!==null)){
+if((typeof args==="object" || typeof args==="function") && (args!==null)){
 return true;
 
 }
