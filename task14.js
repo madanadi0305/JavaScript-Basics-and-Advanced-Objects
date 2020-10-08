@@ -78,8 +78,14 @@ if(keyNext==='contents'){
 }
 
 }
-console.log(directory);
-return directory;
+
+var string1="";
+for(var i=0;i<directory.length;i++){
+
+string1=string1+directory[i].toString()+"\n";
+}
+return string1;
+
 }
 module.exports=task14;
-//task14(data);
+
