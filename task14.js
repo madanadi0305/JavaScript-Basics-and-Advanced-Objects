@@ -81,5 +81,5 @@ if(keyNext==='contents'){
 console.log(directory);
 return directory;
 }
-
-task14(data);
+module.exports=task14;
+//task14(data);
