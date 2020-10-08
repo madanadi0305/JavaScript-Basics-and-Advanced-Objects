@@ -73,7 +73,7 @@ if(keyNext==='contents'){
  var contentElem2=contentElem[contentElemKeys].contents;
  var contentElemKeys2=Object.keys(contentElem2);
  directory.push(contentElem2[contentElemKeys2].name);
- directory.push(contentElem2[contentElemKeys2].contents[0]);
+ directory.push(contentElem2[contentElemKeys2].contents);
    
 }
 
