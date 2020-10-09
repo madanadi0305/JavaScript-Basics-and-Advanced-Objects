@@ -22,6 +22,7 @@ return string;
 
 diamond:function(x,y){
 var string="";
+var n=parseInt(x);
 for(var i=1;i<=n;i++){
 for(var j=1;j<=spaces;j++){
 
