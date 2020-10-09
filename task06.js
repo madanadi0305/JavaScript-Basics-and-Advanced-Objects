@@ -25,14 +25,18 @@ prop.push(value);
 }
 
 prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))&&(x!==""))});  
-var prop11=Object.assign({},prop1);
+//var prop11=Object.assign({},prop1);
 //console.log(prop1);
 console.log(prop11);  
 prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0||x==="undefined")});  
 console.log(prop1);
 console.log(prop2);
- 
-newObj.prop1=prop11;
+var prop11={};
+for(var i=0;i<prop1.length;i++){
+    prop11[i]=prop1[i];
+} 
+var prop111=Object.entries(prop11);
+newObj.prop1=prop111;
 newObj.prop2=prop2.length;
 console.log(newObj); 
 return newObj;  
