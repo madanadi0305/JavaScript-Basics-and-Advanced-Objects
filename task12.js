@@ -17,5 +17,7 @@ return str1;
 }
 };
 
+return stringManipulation;
+
 }
 module.exports=task12;
