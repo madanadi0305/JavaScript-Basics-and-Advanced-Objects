@@ -31,59 +31,57 @@ function task14(data){
 var directory=[];
 var root=data.name;
 var val;
-directory.push(root);
+var string1="";
 
+string1=string1+root+"\n";
 var contents=data.contents;
-//console.log(contents[1]);
+
 
 
 for(var i=0;i<contents.length;i++){
 
 var elem=contents[i];
-//console.log(elem);
+
 var keys=Object.keys(elem);
 for(var i=0;i<keys.length;i++){
 
    var key=keys[i];
   if(key==='name'){
     
-    directory.push(elem[key]);
+    string1+elem[key]+"\n";
+ 
   }
   
  if(key==='contents'){
    var innerElem=elem[key];
   var innerKeys=Object.keys(innerElem);
-  directory.push(innerElem[innerKeys].name);
-  directory.push(innerElem[innerKeys].contents[0]);
+  string1=string1+innerElem[innerKeys].name+"\n"+string1+innerElem[innerKeys].contents[0]+"\n";
  }
 }
-//elem=contents[i+1];
+
 }
 var nextContent=contents[1];
 var keysNextContent=Object.keys(nextContent);
 for(var i=0;i<keysNextContent.length;i++){
 var keyNext=keysNextContent[i];
 if(keyNext==='name'){
-  directory.push(nextContent[keyNext]);
+  string1=string1+nextContent[keyNext]+"\n";
 }
 if(keyNext==='contents'){
   var contentElem=nextContent[keyNext];
   var contentElemKeys=Object.keys(contentElem);
-  directory.push(contentElem[contentElemKeys].name);
+  string1=string1+contentElem[contentElemKeys].name+"\n";
+
  var contentElem2=contentElem[contentElemKeys].contents;
  var contentElemKeys2=Object.keys(contentElem2);
- directory.push(contentElem2[contentElemKeys2].name);
- directory.push(contentElem2[contentElemKeys2].contents);
+ string1=string1+contentElem2[contentElemKeys2].name+"\n";
+ string1=string1+contentElem2[contentElemKeys2].contents+"\n";
    
 }
 
 }
 
-var string1="";
-for(var i=0;i<directory.length;i++){
 
-string1=string1+directory[i].toString()+"\n";
-}
 return string1;
 
 }
