@@ -1,48 +1,41 @@
-  var recipe = {
+var recipe = {
   title: "mole",
   servings: [2, 5, 7, 9, 7, 9, 6, 5, 4, 4],
-  //servings:[2,1, 1, 1, 2, 3, 10,10, 10, 9, 2, 3, 3,  5,7,9, 7, 9, 6, 5,4,4],
+//servings:[2,1, 1, 1, 2, 3, 10,10, 10, 9, 2, 3, 3,  5,7,9, 7, 9, 6, 5,4,4],
   ingredients: ["cumin", "cinnamon", "cocoa"]
 };
-
 function task11(recipe){
 var list=recipe.servings;
-var val;
-console.log(list);
-var counts={};
-var list2=[];
-var list3=[];
+var duplicates=[];
+var count,k;
+
 for(var i=0;i<list.length;i++){
-val=list[i];
+  count=0;
+  var elem=list[i];
+for(var j=i;j<list.length;j++){
+if(elem===list[j]){
+count=count+1;
 
-
-  if(!counts[val]){
-  counts[val]=1;
-  }
-  else{
-  counts[val]=counts[val]+1;
-
+}
+k=list[j];
+if(count===2){
+  duplicates.push(k);
+  break;
+}
 }
 
 }
-console.log(counts);
-for(var Val in counts){
-if(counts[Val]>=2){
-list2.push(Val);
+//var final_duplicates=[];
+for(var i=0;i<duplicates.length;i++){
+for(var j=i+1;j<duplicates.length;j++){
+if(duplicates[j]===duplicates[i]){
+  duplicates.splice(j,1);
 }
-console.log(list2);
-}
-for(var i=0;i<list.length;i++){
-for(var j=0;j<list2.length;j++){
-if(list2[j]===list[i]){
-list3.push(list[i]);
 
 }
 
 }
-}
-//console.log(list3);
-return list3;
+return duplicates;
+//console.log(duplicates);
 }
 module.exports=task11;
-//task11(recipe);
