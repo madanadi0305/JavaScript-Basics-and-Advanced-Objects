@@ -11,36 +11,28 @@ var arr = [
 ];
 
 function task06(arr){
+var prop1=[];
+var prop2=[];
+var prop=[];
 var newObj={};
-var prop1;
-var prop2;  
-
-var prop=[];  
 for(var i=0;i<arr.length;i++){
-var value=arr[i]["id"];
+prop.push(arr[i]);
 
-prop.push(value);
-
-  
+}
+prop.forEach(function(elem){
+var x=elem["id"];
+if(x!==null||x!=='undefined'||x!==0||x!==""||(!isNaN(x))){
+prop1.push(elem);
+}
+else{
+    prop2.push(elem);
 }
 
-prop1=prop.filter(function(x){return ((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))&&(x!==""))});  
-//var prop11=Object.assign({},prop1);
-//console.log(prop1);
-console.log(prop11);  
-prop2=prop.filter(function(x){return(x===null||isNaN(x)||x===undefined||x===0||x==="undefined")});  
-console.log(prop1);
-console.log(prop2);
-var prop11={};
-for(var i=0;i<prop1.length;i++){
-    prop11[i]=prop1[i];
-} 
-var prop111=Object.entries(prop11);
-newObj.prop1=prop111;
+
+});
+newObj.prop1=prop1;
 newObj.prop2=prop2.length;
-console.log(newObj); 
-return newObj;  
+return newObj;
 }
-module.exports=task06;
-//var a=task06(arr);
-//console.log(a);
+
+module.export=task06;
