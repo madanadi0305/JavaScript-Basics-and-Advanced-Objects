@@ -36,4 +36,4 @@ newObj.prop2=prop2.length;
 return newObj;
 }
 
-module.export=task06;
+module.exports=task06;
