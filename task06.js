@@ -20,8 +20,9 @@ prop.push(arr[i]);
 
 }
 prop.forEach(function(elem){
-var x=elem["id"];
-if(x!==null||x!=='undefined'||x!==0||x!==""||(!isNaN(x))){
+var key=Object.keys(elem);    
+var x=elem[key];
+if((x!==null)&&(x!==0)&&(x!==undefined)&&(!isNaN(x))){
 prop1.push(elem);
 }
 else{
