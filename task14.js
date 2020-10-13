@@ -26,14 +26,16 @@ var data = {
     }
   ]
 };
-var str="";
 
+var str="";
 function task14(data){
+ 
   var str2=start(data);
   return str2;
 }
 function start(objNode){
 var objContent;
+
 if(objNode.name){
   str=str+objNode.name+"\n";
 }
