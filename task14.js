@@ -31,6 +31,7 @@ var str="";
 function task14(data){
  
   var str2=start(data);
+  console.log(str2);
   return str2;
 }
 function start(objNode){
