@@ -36,7 +36,9 @@ function task14(data){
 }
 function start(objNode){
 var objContent;
+
 for(var property in objNode){
+if(obj.hasOwnProperty){
 if(typeof objNode[property]==='string'){
   str=str+objNode[property]+"\n";
 }
@@ -47,7 +49,7 @@ if(typeof objNode[property]==='object'){
    
      start(next);
   }
-
+}
 
 }
 return str;
