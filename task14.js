@@ -38,7 +38,7 @@ function start(objNode){
 var objContent;
 
 for(var property in objNode){
-if(obj.hasOwnProperty){
+if(objNode.hasOwnProperty(property)){
 if(typeof objNode[property]==='string'){
   str=str+objNode[property]+"\n";
 }
