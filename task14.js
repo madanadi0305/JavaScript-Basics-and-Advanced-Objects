@@ -1,24 +1,24 @@
 var data = {
-  name: "",
+  name: "root",
   contents: [
     {
-      name: "",
+      name: "A",
       contents: [
         {
-          name: "",
-          contents: [""]
+          name: "fileA1",
+          contents: ["Hello!"]
         }
       ]
     },
     {
-      name: "",
+      name: "B",
       contents: [
         {
-          name: "",
+          name: "dirB1",
           contents: [
             {
-              name: "",
-              contents: [""]
+              name: "fileB1.1",
+              contents: ["Hello!"]
             }
           ]
         }
@@ -44,7 +44,7 @@ if(typeof objNode[property]==='string'){
 }
 
 
-if(typeof objNode[property]==='object'){
+if((objNode[property])&&(typeof objNode[property]==='object')){
  var next=objNode[property];
    
      start(next);
