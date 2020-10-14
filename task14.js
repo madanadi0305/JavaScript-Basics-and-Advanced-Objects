@@ -1,31 +1,31 @@
-/*var data = {
-  name: "root",
+var data = {
+  name: "",
   contents: [
     {
-      name: "A",
+      name: "",
       contents: [
         {
-          name: "fileA1",
-          contents: ["Hello!"]
+          name: "",
+          contents: [""]
         }
       ]
     },
     {
-      name: "B",
+      name: "",
       contents: [
         {
-          name: "dirB1",
+          name: "",
           contents: [
             {
-              name: "fileB1.1",
-              contents: ["Hello!"]
+              name: "",
+              contents: [""]
             }
           ]
         }
       ]
     }
   ]
-};*/
+};
 
 var str="";
 function task14(data){
