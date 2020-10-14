@@ -28,9 +28,9 @@
 };*/
 
 
-function task14(data){
+function task14(obj){
  
-  var str1=start(data);
+  var str1=start(obj);
   
   return str1;
 }
