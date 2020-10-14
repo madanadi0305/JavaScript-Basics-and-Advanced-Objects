@@ -1,4 +1,4 @@
-/*var data = {
+var data = {
   name: "root",
   contents: [
     {
@@ -25,17 +25,17 @@
       ]
     }
   ]
-};*/
+};
 
 
 function task14(obj){
  
-  var str1=start(obj);
   
-  return str1;
-}
-function start(objNode){
-//var objContent;
+  
+  
+
+
+
 var str="";
 for(var property in objNode){
 
@@ -47,7 +47,7 @@ if(typeof objNode[property]==='string'){
 if((objNode[property])&&(typeof objNode[property]==='object')){
  var next=objNode[property];
    
-     str+start(next);
+    str=str+task14(next);
   }
 
 
