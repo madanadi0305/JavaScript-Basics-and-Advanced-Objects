@@ -28,7 +28,7 @@ var data = {
 };
 
 
-function task14(obj){
+function task14(data){
  
   
   
