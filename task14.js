@@ -1,4 +1,4 @@
-var data = {
+/*var data = {
   name: "root",
   contents: [
     {
@@ -25,7 +25,7 @@ var data = {
       ]
     }
   ]
-};
+};*/
 
 var str="";
 function task14(data){
