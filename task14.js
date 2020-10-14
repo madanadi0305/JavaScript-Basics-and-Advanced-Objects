@@ -30,55 +30,27 @@ var data = {
 var str="";
 function task14(data){
  
-  var str2=start(data);
+  var str1=start(data);
   
-  return str2;
+  return str1;
 }
 function start(objNode){
 var objContent;
-
-if(objNode.name){
-  str=str+objNode.name+"\n";
+for(var property in objNode){
+if(typeof objNode[property]==='string'){
+  str=str+objNode[property]+"\n";
 }
 
 
-if(typeof objNode.contents==='object'){
-  objNode.contents.forEach(function(next){
-    
-   
-   if(next.contents){
-   //  str=str+objContent.contents+"\n";
-  
-   objContent=next.contents;
-  
-   }
+if(typeof objNode[property]==='object'){
+ var next=objNode[property];
    
      start(next);
-  
+  }
 
-  });
 
-  
-   str=str+objContent+"\n";
-  
- 
 }
-
-var array=str.split("\n");
-var array1=[];
-//console.log(array);
-array.forEach(function(elem){
-if((elem!==" ") && (elem!=='undefined') && (elem!=="[object Object]")){
-  array1.push(elem);
-  array1.push("\n");
-}
-
-});
-var str1=array1.join("");
-return str1;
-
-
-
+return str;
 }
 
 module.exports=task14;
